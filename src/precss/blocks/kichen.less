@@ -1,0 +1,51 @@
+.kitchen__title{
+  text-align: center;
+  margin-top: 67px;
+  margin-bottom: 51px;
+  position: relative;
+  color: @text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  &::after{
+  content: '';
+  width: 88px;
+  height: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 48%;
+  background-color: @accent;
+  }
+}
+.food{
+  .row-flex();
+  .col();
+  .size-xs(12);
+  justify-content: center;
+  align-items: center;
+}
+.statistic{
+  .row-flex();
+  justify-content: space-around;
+  margin-top: 50px;
+  & span{
+    display: block;
+    color: @text-color;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+    margin-bottom: 12px;
+  }
+  & li{
+    color: @text-color;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    text-align: center;
+  }
+}

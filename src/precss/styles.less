@@ -1,0 +1,57 @@
+.reset();
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+
+}
+
+.container{
+  .wrapper();
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+/*=== базовый слой ===*/
+
+@import "smart-grid.less";
+@import "var.less";
+@import "blocks/header.less";
+@import "blocks/advantages.less";
+@import "blocks/mobile-app.less";
+@import "blocks/kichen.less";
+
+
+
+footer{
+  padding: 42px 0;
+  border-top: 1px solid #00000042;
+  .row-flex();
+  justify-content: space-between;
+  align-items: center;
+  p{
+    opacity: 0.5;
+    color: @grey;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  a{
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-decoration: none;
+    color: @text-color;
+  }
+}
+
+
+
+
+
+
+
